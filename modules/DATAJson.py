@@ -1,4 +1,3 @@
-from colorama import Fore, Style
 from rich.console import Console
 
 console = Console()
@@ -14,14 +13,13 @@ class DATAJson:
         else:
             user_answer = input("Veuillez choisir la bonne réponse : ").split()
             if len(user_answer) > 1:
-                console.print("[bold red]Vous ne devez choisir qu'une seule réponse.[/bold red]")
+                console.print("Vous ne devez choisir qu'une seule réponse.", style="bold red")
                 return False
         
         if self.is_good_a_answer(user_answer):
             return True
         
         return False
-    
         
     def is_good_a_answer(self, user_answer):
         count = 0
@@ -34,7 +32,7 @@ class DATAJson:
                     pass_answer.append(int(answer))
                     
             except ValueError:
-                print(f"{Style.DIM}{Fore.RED}MERCI de spécifier une valeur correcte.{Style.RESET_ALL}")
+                console.print(f"MERCI de spécifier une valeur correcte.", style="bold red")
                 return self.get_result()
                 
         return count == len(self.ANSWERS)
