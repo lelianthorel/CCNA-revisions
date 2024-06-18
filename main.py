@@ -1,8 +1,4 @@
-import json
-import os
 from main_configuration import *
-from rich.console import Console
-from rich.prompt import Prompt
 
 console = Console()
 
@@ -18,9 +14,11 @@ def lire_fichier_json(nomFich):
         return []
 
 def affiche_menu(dif_modules):
-    console.print("\n[bold green]MENU DE GESTION[/bold green]")
+    console.print("\nMENU DE GESTION", style='bold green')
+
     for key, value in dif_modules.items():
         console.print(f"[cyan]{key}[/cyan] - {value['name']}")
+
     console.print("[bold yellow]F[/bold yellow] - Quitter")
     module_choose = Prompt.ask("Veuillez entrer le numéro du module que vous voulez réviser")
     clear_console()
@@ -32,8 +30,7 @@ def clear_console():
 def test_open(path):
     try:
         with open(path) as f:
-            pass
-        return True
+            return True
     except Exception:
         console.print(f"Erreur : Le chemin d'accès au fichier '{path}' n'est pas bon.", style="bold red")
         return False
@@ -73,20 +70,20 @@ def main():
                 
                 result = DATAJson(answers)
                 if result.get_result():
-                    console.print(f"[bold green]:white_check_mark: CORRECT ! Question {count} sur {nb_questions}[/bold green]")
+                    console.print(f":white_check_mark: CORRECT ! Question {count} sur {nb_questions}", style='bold green')
                     nb_good_answers = total.add_one_good_answer()
                 else:
-                    console.print(f"[bold red]:x: FAUX ! La ou les réponses étaient : {answers}, Question {count} sur {nb_questions}[/bold red]")
+                    console.print(f":x: FAUX ! La ou les réponses étaient : {answers}, Question {count} sur {nb_questions}", style='bold red')
                 
                 dataJson.remove(data)
             
             ratio = (nb_good_answers / nb_questions) * 100
-            console.print(f"[bold yellow]Voici le nombre de bonnes réponses : {nb_good_answers} / {nb_questions}, pourcentage : {ratio:.2f}%[/bold yellow]")
+            console.print(f"Voici le nombre de bonnes réponses : {nb_good_answers} / {nb_questions}, pourcentage : {ratio:.2f}%", style='bold yellow')
             
         elif module_choose.upper() == "F":
             quitter = True
         else:
-            console.print(f"[bold red]Choix invalide : {module_choose}. Veuillez réessayer.[/bold red]")
+            console.print(f"Choix invalide : {module_choose}. Veuillez réessayer.", style='bold red')
 
 if __name__ == '__main__':
     main()
