@@ -15,14 +15,15 @@ def lire_fichier_json(nomFich):
 
 def affiche_menu(dif_modules):
     console.print("\nMENU DE GESTION", style='bold green')
+    ccna = Prompt.ask("Quel CCNA voulez-vous réviser ? 1/2")
 
-    for key, value in dif_modules.items():
+    for key, value in dif_modules[ccna].items():
         console.print(f"[cyan]{key}[/cyan] - {value['name']}")
 
     console.print("[bold yellow]F[/bold yellow] - Quitter")
     module_choose = Prompt.ask("Veuillez entrer le numéro du module que vous voulez réviser")
     clear_console()
-    return module_choose
+    return ccna, module_choose
 
 def clear_console():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -40,25 +41,31 @@ def main():
     while not good_path:
         json_directory = Prompt.ask("Veuillez entrer le chemin du répertoire contenant les fichiers JSON")
         
-        dif_modules = {
-            "1": {"path": os.path.join(json_directory, "ccna1-3.json"), "name": "Modules 1-3"},
-            "2": {"path": os.path.join(json_directory, "ccna4-7.json"), "name": "Modules 4-7"},
-            "3": {"path": os.path.join(json_directory, "ccna8-10.json"), "name": "Modules 8-10"},
-            "4": {"path": os.path.join(json_directory, "ccna11-13.json"), "name": "Modules 11-13"},
-            "5": {"path": os.path.join(json_directory, "ccna14-15.json"), "name": "Modules 14-15"},
-            "6": {"path": os.path.join(json_directory, "ccna16-17.json"), "name": "Modules 16-17"}
+        dif_modules = { "1": {"1": {"path": os.path.join(json_directory, "CCNA1/ccna1-3.json"), "name": "Modules 1-3"},
+                                  "2": {"path": os.path.join(json_directory, "CCNA1/ccna4-7.json"), "name": "Modules 4-7"},
+                                  "3": {"path": os.path.join(json_directory, "CCNA1/ccna8-10.json"), "name": "Modules 8-10"},
+                                  "4": {"path": os.path.join(json_directory, "CCNA1/ccna11-13.json"), "name": "Modules 11-13"},
+                                  "5": {"path": os.path.join(json_directory, "CCNA1/ccna14-15.json"), "name": "Modules 14-15"},
+                                  "6": {"path": os.path.join(json_directory, "CCNA1/ccna16-17.json"), "name": "Modules 16-17"}
+                                  },
+                        "2": {"1": {"path": os.path.join(json_directory, "CCNA2/ccna1-4.json"), "name": "Modules 1-4"},
+                                  "2": {"path": os.path.join(json_directory, "CCNA2/ccna5-6.json"), "name": "Modules 5-6"},
+                                  "3": {"path": os.path.join(json_directory, "CCNA2/ccna7-9.json"), "name": "Modules 7-9"},
+                                  "4": {"path": os.path.join(json_directory, "CCNA2/ccna10-13.json"), "name": "Modules 10-13"},
+                                  "5": {"path": os.path.join(json_directory, "CCNA2/ccna14-16.json"), "name": "Modules 14-16"},
+                                  },
         }
-        good_path = test_open(dif_modules["1"]["path"])
+        good_path = test_open(dif_modules["1"]["1"]["path"])
 
     total = FINALResult()
     quitter = False
     count = 0
 
     while not quitter:
-        module_choose = affiche_menu(dif_modules)
+        ccna, module_choose = affiche_menu(dif_modules)
         
-        if module_choose in dif_modules.keys():
-            dataJson = lire_fichier_json(dif_modules[module_choose]["path"])
+        if module_choose in dif_modules[ccna].keys():
+            dataJson = lire_fichier_json(dif_modules[ccna][module_choose]["path"])
             nb_questions = len(dataJson)
             nb_good_answers = 0
             
@@ -79,6 +86,7 @@ def main():
             
             ratio = (nb_good_answers / nb_questions) * 100
             console.print(f"Voici le nombre de bonnes réponses : {nb_good_answers} / {nb_questions}, pourcentage : {ratio:.2f}%", style='bold yellow')
+            count = 0
             
         elif module_choose.upper() == "F":
             quitter = True
