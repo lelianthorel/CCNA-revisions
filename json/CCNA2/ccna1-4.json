@@ -122,18 +122,6 @@
       ]
    },
    {
-      "question": "12. Examinez l’illustration. Un administrateur réseau vérifie l’affectation des ports et des VLAN sur le commutateur S2 et remarque que les interfaces Gi0/1 et Gi0/2 ne sont pas incluses dans le résultat. Pourquoi ces interfaces n’apparaissent-elles pas dans le résultat affiché ?",
-      "choices": [
-         "Les VLAN natifs ne correspondent pas entre les commutateurs.",
-         "Les interfaces sont arrêtées administrativement.",
-         "Les interfaces sont configurées comme interfaces d’agrégation.",
-         "Aucun support n’est connecté aux interfaces."
-      ],
-      "answers": [
-         2
-      ]
-   },
-   {
       "question": "13. Un réseau comporte plusieurs VLAN répartis entre plusieurs commutateurs. Que se passe-t-il lorsqu’un périphérique sur le VLAN 20 envoie une trame Ethernet de diffusion ?",
       "choices": [
          "Tous les périphériques de tous les VLAN voient la trame.",
@@ -143,30 +131,6 @@
       ],
       "answers": [
          2
-      ]
-   },
-   {
-      "question": "14. Examinez l’illustration. Toutes les stations de travail sont correctement configurées sur le VLAN 20. Les stations de travail connectées au commutateur SW1 ne peuvent pas envoyer de trafic vers les stations de travail connectées à SW2. Que faire pour résoudre le problème ?",
-      "choices": [
-         "Autoriser le VLAN 20 sur la liaison agrégée.",
-         "Configurer les stations de travail sur SW2 de sorte à les intégrer au VLAN natif.",
-         "Configurer les stations de travail sur SW1 de sorte à les intégrer au VLAN par défaut.",
-         "Activer le protocole DTP aux deux extrémités de l’agrégation."
-      ],
-      "answers": [
-         0
-      ]
-   },
-   {
-      "question": "16. Reportez-vous à l’illustration. Dans quel mode de commutateur le port G0/1 doit-il être attribué selon les bonnes pratiques de Cisco ?",
-      "choices": [
-         "trunk",
-         "accès",
-         "auto",
-         "Natif"
-      ],
-      "answers": [
-         0
       ]
    },
    {
@@ -198,18 +162,6 @@
       ]
    },
    {
-      "question": "19. Examinez l’illustration. Quelle est la cause de l’erreur affichée dans la configuration du routage inter-VLAN sur le routeur CiscoVille ?",
-      "choices": [
-         "L’interface gig0/0 ne prend pas en charge le routage inter-VLAN.",
-         "L’adresse IP sur CiscoVille est incorrecte.",
-         "La commande encapsulation dot1Q 20 n’a pas été configurée.",
-         "La commande no shutdown n’a pas été configurée."
-      ],
-      "answers": [
-         2
-      ]
-   },
-   {
       "question": "20. Lors d’un routage d’un grand nombre de VLAN, quels sont les inconvénients de l’utilisation du routage inter-VLAN « Router-on-a-Stick » par rapport au routage inter-VLAN du commutateur multicouche ? (Choisissez deux réponses.)",
       "choices": [
          "La méthode « Router-on-a-Stick » nécessite que les sous-interfaces soient configurées sur les mêmes sous-réseaux.",
@@ -220,32 +172,6 @@
       ],
       "answers": [
          1
-      ]
-   },
-   {
-      "question": "21. Examinez l’illustration. Un administrateur réseau vérifie la configuration du routage entre réseaux locaux virtuels. Les utilisateurs se plaignent que des PC se trouvant dans des VLAN différents ne parviennent pas à communiquer. D’après le résultat, quelles sont les erreurs de configuration de l’interface Gi1/1 du commutateur ? (Choisissez deux réponses.)",
-      "choices": [
-         "La négociation de l’agrégation est activée sur Gi1/1.",
-         "L’interface Gi1/1 est configurée en mode d’agrégation.",
-         "L’interface Gi1/1 se trouve dans le VLAN par défaut.",
-         "Le protocole d’encapsulation d’agrégation est mal configuré.",
-         "Le VLAN voix n’est pas attribué à Gi1/1."
-      ],
-      "answers": [
-         1
-      ]
-   },
-   {
-      "question": "22. Examinez l’illustration. Un administrateur réseau vérifie la configuration du routage entre réseaux locaux virtuels. Les utilisateurs se plaignent que PC2 ne peut pas communiquer avec PC1. D’après le résultat, quelle est la cause du problème ?",
-      "choices": [
-         "La commande encapsulation dot1Q 5 ne contient pas le bon VLAN.",
-         "La commande interface GigabitEthernet0/0.5 n’a pas été saisie correctement.",
-         "Aucune adresse IP n’est configurée sur l’interface Gi0/0.",
-         "L’interface Gi0/0 n’est pas configurée comme port agrégé.",
-         "La commande no shutdown n’est pas exécutée sur les sous-interfaces."
-      ],
-      "answers": [
-         0
       ]
    },
    {
@@ -286,30 +212,6 @@
       ]
    },
    {
-      "question": "26. Examinez l’illustration. Un administrateur réseau a configuré R1 comme illustré. Lorsque l’administrateur vérifie l’état de l’interface série, celle-ci est indiquée comme étant administrativement désactivée. Quelle commande supplémentaire doit être exécutée sur l’interface série de R1 pour activer l’interface ?",
-      "choices": [
-         "clockrate 128000",
-         "end",
-         "IPv6 enable",
-         "no shutdown"
-      ],
-      "answers": [
-         3
-      ]
-   },
-   {
-      "question": "27. Reportez-vous à l’illustration. L’administrateur réseau souhaite configurer le commutateur Switch1 pour autoriser les connexions SSH et interdire les connexions Telnet. Comment doit-il modifier la configuration affichée afin d’obtenir le résultat escompté ?",
-      "choices": [
-         "Il doit reconfigurer la clé RSA.",
-         "Il doit modifier la commande transport input .",
-         "Il doit configurer SSH sur une ligne différente.",
-         "Il doit utiliser SSH version 1."
-      ],
-      "answers": [
-         1
-      ]
-   },
-   {
       "question": "28. Quelle solution permettrait à une université de réduire la congestion du réseau causée par des collisions ?",
       "choices": [
          "un routeur avec trois ports Ethernet",
@@ -329,19 +231,6 @@
          "Les interfaces virtuelles prennent en charge les sous-interfaces.",
          "Les SVIs peuvent être regroupés dans EtherChannels.",
          "Les SIV éliminent le besoin d’une passerelle par défaut dans les hôtes."
-      ],
-      "answers": [
-         0
-      ]
-   },
-   {
-      "question": "30. Examinez l’illustration. Un administrateur réseau configure le routage inter-VLAN sur un réseau. Pour l’instant, un seul VLAN est utilisé, mais d’autres seront ajoutés prochainement. Quel est le rôle du paramètre manquant, indiqué par un point d’interrogation mis en surbrillance dans l’illustration ?",
-      "choices": [
-         "Il identifie le numéro du VLAN.",
-         "Il identifie la sous-interface.",
-         "Il identifie le type d’encapsulation utilisé.",
-         "Il identifie le nombre d’hôtes autorisés sur l’interface.",
-         "Il identifie le numéro du VLAN natif."
       ],
       "answers": [
          0
@@ -469,18 +358,6 @@
       ]
    },
    {
-      "question": "41. Examinez l’illustration. Un administrateur réseau configure le routeur RT1 pour le routage inter-VLAN. Le commutateur est configuré correctement et fonctionne. Les hôtes Host1, Host2 et Host3 ne parviennent pas à communiquer entre eux. D’après la configuration du routeur, quelle est la cause du problème ?",
-      "choices": [
-         "Les adresses IP des sous-interfaces ne sont pas correctement associées aux VLAN.",
-         "Chaque sous-interface de l’interface Fa0/0 nécessite une commande no shutdown séparée.",
-         "Les routeurs ne prennent pas en charge l’encapsulation 802.1Q sur les sous-interfaces.",
-         "Il manque les informations de configuration des adresses IP dans l’interface Fa0/0."
-      ],
-      "answers": [
-         0
-      ]
-   },
-   {
       "question": "42. Un technicien est en train de configurer un nouveau commutateur Cisco 2960. Quel est l’effet de l’émission de la commande BranchSw(config-if)# mdix auto ?",
       "choices": [
          "Il ajuste automatiquement le port pour permettre aux connexions de périphériques d’utiliser soit un câble direct, soit un câble croisé.",
@@ -542,18 +419,6 @@
       ]
    },
    {
-      "question": "47. Examinez l’illustration. Un administrateur réseau a configuré le routeur CiscoVille avec les commandes ci-dessus pour assurer le routage entre réseaux locaux virtuels. Quelle commande est requise sur un commutateur connecté à l’interface Gi0/0 du routeur CiscoVille pour autoriser le routage inter-VLAN ?",
-      "choices": [
-         "switchport mode access",
-         "no switchport",
-         "switchport mode dynamic desirable",
-         "switchport mode trunk"
-      ],
-      "answers": [
-         3
-      ]
-   },
-   {
       "question": "50. Un technicien est en train de configurer un nouveau commutateur Cisco 2960. Quel est l’effet de l’émission de la commande BranchSw# configure terminal ?",
       "choices": [
          "Il met à jour la table d’adresses MAC pour le port associé.",
@@ -589,30 +454,6 @@
       ],
       "answers": [
          2
-      ]
-   },
-   {
-      "question": "56. Examinez l’illustration. Un administrateur réseau a configuré le routeur CiscoVille avec les commandes ci-dessus pour assurer le routage entre réseaux locaux virtuels. Quel type de port est requis sur un commutateur connecté à Gi0/0 sur le routeur CiscoVille pour permettre le routage inter-VLAN ?",
-      "choices": [
-         "Interface SVI",
-         "Port agrégé",
-         "Port routé",
-         "Port d’accès"
-      ],
-      "answers": [
-         1
-      ]
-   },
-   {
-      "question": "57. Reportez-vous à l’illustration. Une configuration router-on-a-stick a été mise en œuvre pour les VLAN 15, 30 et 45, comme l’indique le résultat de la commande show running-config . Les PC du VLAN 45, qui utilisent le réseau 172.16.45.0 /24, ont des difficultés à se connecter aux PC du VLAN 30 du réseau 172.16.30.0 /24. Quelle erreur la plus probable est à l’origine de ce problème ?",
-      "choices": [
-         "Il manque une adresse IP sur l’interface Gigabit Ethernet 0/0.",
-         "Une adresse IP incorrecte est configurée sur l’interface Gigabit Ethernet 0/0.30.",
-         "Il manque la commande no shutdown sur l’interface Gigabit Ethernet 0/0.30.",
-         "Le mauvais VLAN a été configuré sur l’interface GigabitEthernet 0/0.45."
-      ],
-      "answers": [
-         1
       ]
    },
    {
