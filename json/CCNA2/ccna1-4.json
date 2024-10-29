@@ -158,7 +158,7 @@
          "Assigner le VLAN voix au port de commutation."
       ],
       "answers": [
-         0
+         0, 1, 6, 7
       ]
    },
    {
@@ -171,7 +171,7 @@
          "Plusieurs interfaces SVI sont nécessaires."
       ],
       "answers": [
-         1
+         1, 2
       ]
    },
    {
@@ -233,7 +233,7 @@
          "Les SIV éliminent le besoin d’une passerelle par défaut dans les hôtes."
       ],
       "answers": [
-         0
+         0, 1
       ]
    },
    {
@@ -330,7 +330,7 @@
          "Sur les liaisons qui doivent tenter l’agrégation de manière dynamique"
       ],
       "answers": [
-         2
+         2, 3
       ]
    },
    {
@@ -441,7 +441,7 @@
          "Le trafic hautement prioritaire, comme le trafic vocal, utilise le VLAN natif."
       ],
       "answers": [
-         0
+         0, 1
       ]
    },
    {
