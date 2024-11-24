@@ -10,7 +10,7 @@
          "Adresse MAC"
       ],
       "answers": [
-         1
+         1, 4, 5
       ]
    },
    {
@@ -23,7 +23,7 @@
          "apprentissage"
       ],
       "answers": [
-         1
+         1, 4
       ]
    },
    {
@@ -48,7 +48,7 @@
          "suppression de points de défaillance uniques avec plusieurs commutateurs de couche 2"
       ],
       "answers": [
-         2
+         2, 4
       ]
    },
    {
@@ -73,7 +73,7 @@
          "racine"
       ],
       "answers": [
-         3
+         3, 4
       ]
    },
    {
@@ -123,7 +123,7 @@
          "Blocage"
       ],
       "answers": [
-         0
+         0, 1
       ]
    },
    {
@@ -136,7 +136,7 @@
          "La table des adresses MAC devient instable."
       ],
       "answers": [
-         2
+         2, 4
       ]
    },
    {
@@ -162,7 +162,7 @@
          "Toutes les interfaces doivent être affectées à différents VLAN."
       ],
       "answers": [
-         0
+         0, 3
       ]
    },
    {
@@ -175,7 +175,20 @@
          "mode PAgP"
       ],
       "answers": [
-         0
+         0, 3
+      ]
+   },
+   {
+      "question": "20. Quel paramètre de configuration de mode autorise la formation d’une liaison EtherChannel entre les commutateurs SW1 et SW2 sans envoyer de trafic de négociation ?",
+      "choices": [
+         "SW1: auto\nSW2: auto\nPortFast activé sur les deux commutateurs",
+         "SW1: desirable\nSW2: desirable",
+         "SW1: auto\nSW2: auto\ntrunking activé sur les deux commutateurs",
+         "SW1: on\nSW2: on",
+         "SW1: passive\nSW2: active"
+      ],
+      "answers": [
+         3
       ]
    },
    {
@@ -188,7 +201,7 @@
          "desirable"
       ],
       "answers": [
-         2
+         2, 4
       ]
    },
    {
@@ -371,7 +384,7 @@
          "Il réduit la quantité de configuration nécessaire sur un commutateur."
       ],
       "answers": [
-         3
+         3, 4
       ]
    },
    {
@@ -384,7 +397,7 @@
          "L’EtherChannel utilise des liaisons physiques mises à niveau pour fournir davantage de bande passante."
       ],
       "answers": [
-         0
+         0, 3
       ]
    },
    {
@@ -409,7 +422,7 @@
          "Adresse IP source vers adresse IP de destination"
       ],
       "answers": [
-         3
+         3, 4
       ]
    },
    {
