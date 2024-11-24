@@ -1,5 +1,5 @@
-# Quiz de Révision CCNA 1
-Bienvenue dans l'outil de révision CCNA 1 ! Cet outil est conçu pour vous aider à réviser les questions du CCNA 1 de Cisco en utilisant un format de quiz interactif. Toutes les questions proviennent du site [ccnareponses.com](https://ccnareponses.com/), une ressource utile pour les étudiants préparant l'examen CCNA 1.
+# Quiz de Révision CCNA
+Bienvenue dans l'outil de révision CCNA ! Cet outil est conçu pour vous aider à réviser les questions du CCNA 1 de Cisco en utilisant un format de quiz interactif. Toutes les questions proviennent du site [ccnareponses.com](https://ccnareponses.com/), une ressource utile pour les étudiants préparant l'examen CCNA 1.
 
 Comment utiliser l'outil
 Clonez ce dépôt sur votre machine locale :
@@ -26,7 +26,7 @@ Une fois le quiz terminé, vous obtiendrez un score final indiquant votre perfor
 > [!NOTE]
 > Assurez-vous d'avoir Python installé sur votre système pour exécuter le script.
 
-Cet outil de quiz est conçu pour vous aider à réviser les concepts du CCNA 1. Utilisez-le comme complément à vos études et à d'autres ressources de révision.
+Cet outil de quiz est conçu pour vous aider à réviser les concepts du CCNA. Utilisez-le comme complément à vos études et à d'autres ressources de révision.
 Si vous rencontrez des problèmes ou si vous avez des suggestions d'amélioration, n'hésitez pas à ouvrir une issue sur ce dépôt.
 
 ## Crédits
