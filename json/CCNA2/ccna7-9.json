@@ -1,6 +1,6 @@
 [
    {
-      "question": "1. Associez chaque type de message DHCP à sa description. (Les propositions ne doivent pas être toutes utilisées.)",
+      "question": "2. Quel protocole automatise l’attribution des adresses IP sur un réseau, et quel numéro de port utilise-t-il ? (Choisissez deux réponses.)",
       "choices": [
          "DHCP",
          "DNS",
@@ -10,7 +10,7 @@
          "80"
       ],
       "answers": [
-         0
+         0, 4
       ]
    },
    {
@@ -23,6 +23,18 @@
       ],
       "answers": [
          3
+      ]
+   },
+   {
+      "question": "5. Quel jeu de commandes permet de configurer un routeur comme serveur DHCP attribuant des adresses IPv4 au LAN 192.168.100.0/23 tout en réservant les 10 premières adresses et la dernière adresse pour l’attribution statique ?",
+      "choices": [
+         "ip dhcp excluded-address 192.168.100.1 192.168.100.10\nip dhcp excluded-address 192.168.100.254\nip dhcp pool LAN-POOL-100 network 192.168.100.0 255.255.255.0\nip default-gateway 192.168.100.1",
+         "ip dhcp excluded-address 192.168.100.1 192.168.100.9\nip dhcp excluded-address 192.168.101.254\nip dhcp pool LAN-POOL-100\nip network 192.168.100.0 255.255.254.0\nip default-gateway 192.168.100.1",
+         "ip dhcp excluded-address 192.168.100.1 192.168.100.10\nip dhcp excluded-address 192.168.101.254\nip dhcp pool LAN-POOL-10\nnetwork 192.168.100.0 255.255.254.0\ndefault-router 192.168.100.1",
+         "dhcp pool LAN-POOL-100\nip dhcp excluded-address 192.168.100.1 192.168.100.9\nip dhcp excluded-address 192.168.100.254\nnetwork 192.168.100.0 255.255.254.0\ndefault-router 192.168.101.1"
+      ],
+      "answers": [
+         2
       ]
    },
    {
@@ -148,24 +160,12 @@
       ]
    },
    {
-      "question": "15. Associez les objectifs avec les types de message DHCP correspondants. (Les options ne doivent pas être toutes utilisées.)",
+      "question": "16. Une entreprise utilise la méthode SLAAC pour configurer les adresses IPv6 des stations de travail de ses employés. Un administrateur réseau a configuré l’adresse IPv6 sur l’interface LAN du routeur. L’état de l’interface est UP. Cependant, les stations de travail sur le segment LAN n’ont pas obtenu le préfixe et la longueur de préfixe corrects. Que configurer d’autre sur le routeur connecté au segment LAN pour que les stations de travail obtiennent ces informations ?",
       "choices": [
          "R1(config)# ipv6 unicast-routing",
          "R1(config)# ipv6 dhcp pool < nom du pool >",
          "R1(config-if)# ipv6 nd other-config-flag",
          "R1(config-if)# ipv6 enable"
-      ],
-      "answers": [
-         0
-      ]
-   },
-   {
-      "question": "19. Faites correspondre les types de message DHCP à l’ordre du processus DHCPv6 avec état lorsqu’un client se connecte pour la première fois à un réseau IPv6. (Les propositions ne doivent pas être toutes utilisées.)",
-      "choices": [
-         "Le routeur est configuré pour un fonctionnement DHCPv6 sans état.",
-         "Les clients doivent configurer les ID d’interface supérieurs à 0010.",
-         "Le routeur est configuré pour un fonctionnement DHCPv6 avec état, mais la configuration du pool DHCP est incomplète.",
-         "Le nom du serveur DHCPv6 est ACAD_CLASS."
       ],
       "answers": [
          0
@@ -209,11 +209,11 @@
       ]
    },
    {
-      "question": "30. Associez les types de message DHCP à l’ordre du processus DHCPv4. (Les options ne doivent pas être toutes utilisées.)",
+      "question": "31. Après qu’un hôte a généré une adresse IPv6 à l’aide du processus DHCPv6 ou SLAAC, comment l’hôte vérifie-t-il que l’adresse est unique et donc utilisable?​",
       "choices": [
          "L’hôte envoie une diffusion ARP vers le lien local et si aucun hôte n’envoie de réponse, l’adresse est considérée comme unique.",
          "L’hôte envoie un message de sollicitation de voisin ICMPv6 à l’adresse DHCP ou SLAAC apprise et si aucune annonce de voisin n’est renvoyée, l’adresse est considérée comme unique.",
-         "L’hôte vérifie le cache du voisin local pour l’adresse apprise et si l’adresse n’est pas mise en cache, il est considéré comme unique.",
+         "L’hôte vérifie le cache du voisin local pour l’adresse apprise et si l’adresse n’est pas mise en cache, il est considéré comme unique.​",
          "L’hôte envoie un message de demande d’écho ICMPv6 à l’adresse DHCPv6 ou SLAAC apprise et si aucune réponse n’est renvoyée, l’adresse est considérée comme unique."
       ],
       "answers": [
@@ -230,20 +230,6 @@
       ],
       "answers": [
          0
-      ]
-   },
-   {
-      "question": "33. Ouvrez le fichier d’activité Packet Tracer. Effectuez les tâches dans les instructions relatives et puis répondez à la question.",
-      "choices": [
-         "réseau",
-         "Routeur",
-         "commutateur",
-         "DHCP",
-         "Cisco",
-         "IPv6"
-      ],
-      "answers": [
-         1
       ]
    },
    {
