@@ -83,7 +83,7 @@
          "S1(config-if)# spanning-tree bpduguard enable"
       ],
       "answers": [
-         0
+         0, 4
       ]
    },
    {
@@ -133,7 +133,7 @@
          "802.11ad"
       ],
       "answers": [
-         1
+         1, 4
       ]
    },
    {
@@ -257,7 +257,7 @@
       ]
    },
    {
-      "question": "25. Associer chaque composante fonctionnelle de l’AAA à sa description. (Toutes les options ne doivent pas être utilisées.)",
+      "question": "26. Quelles sont les deux solutions Cisco qui aident à prévenir les attaques d’insuffisance de ressources DHCP ? (Choisissez deux.)",
       "choices": [
          "Sécurité des ports",
          "Protection de la source IP",
@@ -266,11 +266,11 @@
          "Appliances de sécurisation du Web"
       ],
       "answers": [
-         0
+         0, 2
       ]
    },
    {
-      "question": "25. Associer chaque composante fonctionnelle de l’AAA à sa description. (Toutes les options ne doivent pas être utilisées.)",
+      "question": "27. Plusieurs actions peuvent pallier une attaque de VLAN. Citez-en trois. (Choisissez trois propositions.)",
       "choices": [
          "Faire d’un VLAN inutilisé le VLAN natif.",
          "Désactiver le protocole DTP.",
@@ -280,7 +280,7 @@
          "Utiliser des VLAN privés."
       ],
       "answers": [
-         0
+         0, 1, 2
       ]
    },
    {
@@ -332,18 +332,6 @@
       ]
    },
    {
-      "question": "33. Ouvrez le fichier d’activité Packet Tracer. Effectuez les tâches dans les instructions relatives et puis répondez à la question.Que se passe-t-il s’il y a une violation de sécurité de port sur l’interface Fa 0/1 du commutateur S1 ?",
-      "choices": [
-         "Un message syslog est enregistré.",
-         "Les paquets dont les adresses source sont inconnues sont abandonnés.",
-         "Une notification est envoyée.",
-         "L’interface est placée dans l’état de désactivation des erreurs."
-      ],
-      "answers": [
-         1
-      ]
-   },
-   {
       "question": "34. Quel est le composant, la mise en œuvre ou le protocole de contrôle d’accès qui vérifie quelles actions des utilisateurs sont effectuées sur le réseau ?",
       "choices": [
          "Autorisation",
@@ -366,7 +354,7 @@
          "SSID"
       ],
       "answers": [
-         0
+         0, 2, 5
       ]
    },
    {
@@ -379,7 +367,7 @@
          "S’assurer que l’antenne de l’ordinateur portable est fixée."
       ],
       "answers": [
-         0
+         0, 2
       ]
    },
    {
@@ -464,7 +452,7 @@
          "envoi d’une requête ARP"
       ],
       "answers": [
-         0
+         0, 2
       ]
    },
    {
@@ -492,7 +480,7 @@
       ]
    },
    {
-      "question": "46. Un administrateur réseau configure DAI sur un commutateur avec la commande ip arp inspection validate src-mac . Quel est l’objectif de cette commande de configuration?",
+      "question": "47. Un administrateur réseau configure la sécurité des ports sur un commutateur Cisco. La politique de sécurité de l’entreprise indique qu’en cas de violation, les paquets associés à des adresses source inconnues sont à supprimer, et ce sans aucune notification. Quel mode de violation doit être configuré sur les interfaces ?",
       "choices": [
          "off",
          "restrict",
@@ -504,7 +492,7 @@
       ]
    },
    {
-      "question": "46. Un administrateur réseau configure DAI sur un commutateur avec la commande ip arp inspection validate src-mac . Quel est l’objectif de cette commande de configuration?",
+      "question": "48. Quel est l’avantage en matière de sécurité qui permet la protection BPDU sur les interfaces activées par PortFast ?",
       "choices": [
          "Renforcer la mise en place des ponts de racines",
          "Prévenir les attaques par saturation de la mémoire tampon",
@@ -516,7 +504,7 @@
       ]
    },
    {
-      "question": "Quel est l’effet après la saisie de ces commandes ?",
+      "question": "49. Un administrateur réseau saisit les commandes suivantes sur le commutateur SW1.\nSW1(config)# interface range fa0/5 – 10\nSW1(config-if)# ip dhcp snooping limit rate 6",
       "choices": [
          "Si l’un des ports FastEthernet 5 à 10 reçoit plus de 6 messages DHCP par seconde, le port sera arrêté.",
          "Si l’un des ports FastEthernet 5 à 10 reçoit plus de 6 messages DHCP par seconde, le port continuera à fonctionner et un message d’erreur sera envoyé à l’administrateur réseau.",
@@ -622,7 +610,7 @@
          "HTTPS"
       ],
       "answers": [
-         2
+         2, 3
       ]
    },
    {
@@ -698,12 +686,12 @@
       ]
    },
    {
-      "question": "64. Sur la page Summary du WLC Cisco 3504 ( Advanced> Summary ), quel onglet permet à un administrateur réseau d’accéder et de configurer un WLAN pour une option de sécurité spécifique telle que WPA2 ?",
+      "question": "64. Quel est le type de réseau sans fil qui utilise souvent des appareils montés sur les bâtiments ?",
       "choices": [
-         "SÉCURITÉ",
-         "SANS FIL",
-         "GESTION",
-         "WLAN"
+         "Réseau personnel sans fil",
+         "Réseau local sans fil (WLAN)",
+         "Réseau étendu sans fil (WAN)",
+         "Réseau métropolitain sans fil"
       ],
       "answers": [
          3
@@ -791,18 +779,6 @@
       ],
       "answers": [
          2
-      ]
-   },
-   {
-      "question": "72. Quel est le type de réseau sans fil qui utilise souvent des appareils montés sur les bâtiments ?",
-      "choices": [
-         "Réseau personnel sans fil",
-         "Réseau local sans fil (WLAN)",
-         "Réseau étendu sans fil (WAN)",
-         "Réseau métropolitain sans fil"
-      ],
-      "answers": [
-         3
       ]
    }
 ]
