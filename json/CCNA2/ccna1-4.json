@@ -261,18 +261,6 @@
       ]
    },
    {
-      "question": "33. Ouvrez le fichier d’activité Packet Tracer. Effectuez les tâches indiquées dans les instructions d’activité et répondez ensuite à la question.",
-      "choices": [
-         "Serveur local",
-         "Serveur de test",
-         "Serveur Cisco",
-         "Serveur de fichiers"
-      ],
-      "answers": [
-         3
-      ]
-   },
-   {
       "question": "34. Quelle commande affiche des informations sur le paramètre auto-MDIX pour une interface donnée ?",
       "choices": [
          "show controllers",
