@@ -291,7 +291,7 @@
       ]
    },
    {
-      "question": "51. Quelle caractéristique complète l’énoncé suivant ?",
+      "question": "51. Quelle caractéristique complète l’énoncé suivant ?\nLorsqu’ une route statique IPv6 est configurée, il est d’abord nécessaire de configurer…",
       "choices": [
          "la commande “ipv6 unicast-routing”.",
          "l’adresse de saut suivant de deux routeurs adjacents différents.",
@@ -303,7 +303,7 @@
       ]
    },
    {
-      "question": "52. Quelle caractéristique complète l’énoncé suivant ?",
+      "question": "52. Quelle caractéristique complète l’énoncé suivant ?\nLorsqu’ une route statique IPv6 est configurée, une configuration entièrement spécifiée doit être utilisée avec…",
       "choices": [
          "la commande “ipv6 unicast-routing”.",
          "l’adresse de saut suivant de deux routeurs adjacents différents.",
